@@ -14,6 +14,8 @@
 
 ---
 
+#### This tutorial documents the full journey of an enterprise grade AKS cluster provisioning: from portal provisioning errors 🠊 to using Azure CLI successfully 🠊 to validating the cluster with kubectl 🠊 and finally connecting the cluster to Lens for observability. 
 
+#### The cluster was designed to provide for multiple pods that can handle an app ( https://app.emmanueloyekanluprojects.com/ ) and its metric monitoring pods ( https://grafana.emmanueloyekanluprojects.com/login   ;   https://prometheus.emmanueloyekanluprojects.com/query  ). 
 
-#### This tutorial documents the full journey of an enterprise grade AKS cluster provisioning: from portal provisioning errors 🠊 to using Azure CLI successfully 🠊 to validating the cluster with kubectl 🠊 and finally connecting the cluster to Lens for observability. The cluster was designed to provide for multiple pods that can handle an app ( ) and its metric monitoring pods ()
+#### The full step-by-step details regarding how the AKS cluster provisioned with the set of instructions provided here was used to create an enterprise grade app and its monitoring pods are provided at: https://github.com/manuelbomi/End-to-End-LLM-App-Deployment-on-Azure-Kubernetes-Service-AKS-with-Streamlit-Prometheus-Grafana
