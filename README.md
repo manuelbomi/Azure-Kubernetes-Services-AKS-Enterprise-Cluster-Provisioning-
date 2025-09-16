@@ -155,8 +155,127 @@ From this list, you can pick the cheapest available SKU (commonly Standard_B2s o
 
 --- 
 
+#### 2. Create the AKS Cluster
+##### Option A – Dynamically pick the cheapest available SKU:
+
+---
+```ruby
+az aks create \
+  --resource-group llm_enterprise-rg \
+  --name llm-enterprise \
+  --location eastus2 \
+  --node-vm-size $(az vm list-skus \
+      --location eastus2 \
+      --resource-type virtualMachines \
+      --output table \
+      | grep -E 'Standard_B2s|Standard_B2ms|Standard_D2s_v3' \
+      | head -n 1 | awk '{print $1}') \
+  --node-count 1 \
+  --generate-ssh-keys
+
+```
+---
+
+##### Option B – Manually specify a VM SKU (if known available):
+---
+```ruby
+az aks create \
+  --resource-group llm_enterprise-rg \
+  --name llm-enterprise \
+  --location eastus2 \
+  --node-vm-size Standard_B2s \
+  --node-count 1 \
+  --generate-ssh-keys
+
+```
+---
+
+##### Explanation 🔎  :
+
+--resource-group: resource group to contain your AKS cluster.
+
+--name: cluster name (llm-enterprise).
+
+--node-vm-size: VM SKU (either dynamically chosen or explicitly set).
+
+--node-count: number of nodes (start with 1 for cost efficiency).
+
+--generate-ssh-keys: auto-generates SSH keys for VM access.
+
+---
+
+#### 3. Connect kubectl to Your Cluster
+
+---
+```ruby
+az aks get-credentials \
+  --resource-group llm_enterprise-rg \
+  --name llm-enterprise
+
+```
+---
+
+##### Explanation  🔎 :
+* This pulls cluster credentials and configures your local kubectl to talk to the AKS cluster.
+
+---
+
+#### 4. Verify Cluster Connectivity
+---
+```ruby
+kubectl get nodes
+
+```
+---
+
+##### You should see your node(s) listed and in Ready state.
+
+#### You may choose to observe the created AKS cluster from your local Windows machine
+
+##### Check AKS cluster config from local machine
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/9f364594-acb1-45a1-9bfd-6a5bb28515ff" />
+
+---
+
+##### This example shows that two nodes: systempool and userpool are correctly created
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/15300628-60ea-4f6d-8a12-28c49e9d6d23" />
+
+---
+
+##### To get all pods running inside our cluster kubectl get pods --all-namespaces
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/041d7929-4787-4ce7-9609-fd7ce2c876b8" />
+
+---
+
+##### Use the o -wide argument to obtain details of all teh pods
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/72c598e5-b0ba-448e-8c61-7ded7b952ec9" />
+
+---
 
 
+
+## Visualize Cluster in Lens 🖥️ 
+
+#### For enterprise observability, you can connect the cluster to Lens:
+
+* Install Lens
+
+* Import your kubeconfig (retrieved from az aks get-credentials).
+
+* Lens will display your AKS cluster resources in a graphical dashboard.
+
+* This is particularly useful for enterprise teams managing multiple clusters.
+
+##### Use Lens GUI to get access to you AKS cluster
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/747613c7-5401-4295-974b-bc20c255fc32" />
+
+---
+
+##### Lens showing the created AKS Nodes
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/73179d54-9350-4d5e-87bc-3cb822cb293d" />
+
+---
 
 
 
