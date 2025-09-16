@@ -141,6 +141,20 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 ```
 ---
 
+##### Explanation 🔎  : 
+
+--location eastus2: checks VM availability in the eastus2 region.
+
+--resource-type virtualMachines: limits results to VM SKUs.
+
+--query: filters to VMs with ≥ 2 CPUs (suitable for AKS).
+
+--output table: presents results in a clean table format.
+
+From this list, you can pick the cheapest available SKU (commonly Standard_B2s or Standard_B2ms).
+
+--- 
+
 
 
 
