@@ -279,6 +279,71 @@ kubectl get nodes
 
 
 
+## Workflow Summary
+
+* Tried Azure Portal → ran into SKU availability errors.
+
+* Switched to Azure CLI → listed available VM SKUs in region.
+
+* Created AKS cluster with cheapest suitable SKU.
+
+* Connected AKS cluster to kubectl for CLI management.
+  
+* Use local Windows machine to observe created AKS cluster
+
+* Connected AKS cluster to Lens for enterprise observability.
+
+
+## Enterprise Readiness  🚀 
+
+#### This repository demonstrates a CLI-first approach to AKS cluster creation — critical for:
+
+* DevOps automation
+
+* Infrastructure as Code (IaC)
+
+* Cost-aware VM SKU selection
+
+* Scalable enterprise workloads
+
+* Future extensions could include:
+
+  -- Automating deployments with Helm charts.
+
+  -- Integrating Ingress + TLS for production traffic.
+
+  -- Enabling monitoring and logging with Azure Monitor.
+
+  -- Expanding to multi-node pools for enterprise-grade workloads.
+
+---
+
+Thank you for reading
+
+---
+
+### **AUTHOR'S BACKGROUND**
+### Author's Name:  Emmanuel Oyekanlu
+```
+Skillset:   I have experience spanning several years in data science, developing scalable enterprise data pipelines,
+enterprise solution architecture, architecting enterprise systems data and AI applications,
+software and AI solution design and deployments, data engineering, high performance computing (GPU, CUDA), machine learning,
+NLP, Agentic-AI and LLM applications as well as deploying scalable solutions (apps) on-prem and in the cloud.
+
+I can be reached through: manuelbomi@yahoo.com
+
+Websites (professional):  http://emmanueloyekanlu.com/
+Websites (application):  https://app.emmanueloyekanluprojects.com/
+Publications:  https://scholar.google.com/citations?user=S-jTMfkAAAAJ&hl=en
+LinkedIn:  https://www.linkedin.com/in/emmanuel-oyekanlu-6ba98616
+Github:  https://github.com/manuelbomi
+
+```
+[![Icons](https://skillicons.dev/icons?i=aws,azure,gcp,scala,mongodb,redis,cassandra,kafka,anaconda,matlab,nodejs,django,py,c,anaconda,git,github,mysql,docker,kubernetes&theme=dark)](https://skillicons.dev)
+
+
+
+
 
 
 
