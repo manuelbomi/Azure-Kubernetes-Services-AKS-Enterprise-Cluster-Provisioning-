@@ -120,6 +120,28 @@
 
 ---
 
+## Azure CLI Workflow  ✅ 
+#### To avoid dashboard issues such as shown above, and to easily provision for enterrpise grade AKS cluster, it is good to use Azure CLI. 
+
+#### Follow the steps below to use Azure CLI to create AKS clusters that can support enterprise grade Kubernetes clusters:
+
+#### 1. List Supported VM Sizes in Your Region
+
+* This command lists all VM SKUs available in your subscription + region, filtering only those with ≥ 2 vCPUs:
+
+---
+```ruby
+kubectl create namespace ingress-nginx
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install ingress-nginx ingress-nginx/ingress-nginx \
+--namespace ingress-nginx \
+--set controller.service.type=LoadBalancer
+
+```
+---
+
+
 
 
 
