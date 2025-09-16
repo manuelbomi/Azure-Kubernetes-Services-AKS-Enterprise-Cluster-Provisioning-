@@ -54,3 +54,95 @@
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6f83584a-4cf9-4daf-944e-a864237b8269" />
 
 --- 
+
+#### Create Kuberenetes cluster
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/739277c6-8932-4f87-b72c-119a267bbcc8" />
+
+---
+
+#### Select parameters
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7b84aa0c-0a3f-477d-987e-cff59abb83c9" />
+
+---
+
+#### Click on next 
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/2d3f9012-e92b-40b3-9432-d29e2f696b29" />
+
+---
+
+#### Click next and click add nodepool
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f3853d79-f54e-4966-97df-9608829903ba" />
+
+---
+
+#### Select add a virtual machine node pool
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d47fbe5d-7da4-4fa2-bbd4-14c5fe392c42" />
+
+---
+
+#### Add node pool 
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c263211b-e3b5-4acb-98c0-38fbe5151112" />
+
+---
+
+#### Select node size. Cheapest option B-Series v2 selected here
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/9ca4625c-2584-40a2-9351-6347f9cd2b44" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/59052c2b-0fc3-4427-9011-201f057f8fba" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/443dbaf6-f96c-40c4-b6e2-c7ba9c2fc723" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/05e3ffb2-47d7-4d8c-94c9-4cc00bc5da31" />
+
+---
+
+#### Click on next until you reach review and create
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/12dc37cb-95ba-475b-948f-cc1899da7aa3" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/a0e35842-23bb-4de0-85b9-9bbb99f8b6f1" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/3b9219b0-e7bb-458a-99ee-b53439be86bd" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c7aa7a81-e198-4670-a714-7d8d3c0cce43" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/ebf88c2a-32c2-4cce-b945-862a9a7b405f" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/832d1dd6-2b6a-4361-b273-603e8fdad8cf" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/5690eac2-e205-4991-b35e-e58eb6672ba4" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/13f8c167-692f-45dd-8898-6f50800e3bb3" />
+
+---
+
+#### Error in creating the cluster. 
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/0e5e0a67-2bca-46be-9cb0-a17d05a171a4" />
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
