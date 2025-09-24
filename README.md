@@ -1,6 +1,6 @@
 # Azure Kubernetes Services (AKS) Enterprise Cluster Provisioning
 
-## Introduction  📌 
+## Introduction  
 
 #### This repository provides a step-by-step guide to provisioning an Azure Kubernetes Service (AKS) cluster using Azure CLI. 
 
@@ -22,7 +22,7 @@
 
 ---
 
-## Why Enterprise Applications Need CLI-Based AKS Provisioning 🏢
+## Why Enterprise Applications Need CLI-Based AKS Provisioning 
 
 * Automation: Enterprise systems require repeatable infrastructure setup. CLI enables scripting and integration with CI/CD pipelines.
 
@@ -34,7 +34,7 @@
 
 ---
 
-## Azure Portal Limitation  ⚠️ 
+## Azure Portal Limitation   
 
 #### When creating an AKS cluster in the Azure Portal, you may run into validation errors.
 
@@ -120,7 +120,7 @@
 
 ---
 
-## Azure CLI Workflow  ✅ 
+## Azure CLI Workflow  
 #### To avoid dashboard issues such as shown above, and to easily provision for enterrpise grade AKS cluster, it is good to use Azure CLI. 
 
 #### Follow the steps below to use Azure CLI to create AKS clusters that can support enterprise grade Kubernetes clusters:
@@ -141,7 +141,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 ```
 ---
 
-##### Explanation 🔎  : 
+##### Explanation : 
 
 --location eastus2: checks VM availability in the eastus2 region.
 
@@ -190,7 +190,7 @@ az aks create \
 ```
 ---
 
-##### Explanation 🔎  :
+##### Explanation   :
 
 --resource-group: resource group to contain your AKS cluster.
 
@@ -215,7 +215,7 @@ az aks get-credentials \
 ```
 ---
 
-##### Explanation  🔎 :
+##### Explanation   :
 * This pulls cluster credentials and configures your local kubectl to talk to the AKS cluster.
 
 ---
@@ -255,7 +255,7 @@ kubectl get nodes
 
 
 
-## Visualize Cluster in Lens 🖥️ 
+## Visualize Cluster in Lens  
 
 #### For enterprise observability, you can connect the cluster to Lens:
 
@@ -294,7 +294,7 @@ kubectl get nodes
 * Connected AKS cluster to Lens for enterprise observability.
 
 
-## Enterprise Readiness  🚀 
+## Enterprise Readiness  
 
 #### This repository demonstrates a CLI-first approach to AKS cluster creation — critical for:
 
